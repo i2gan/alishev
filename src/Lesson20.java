@@ -1,6 +1,6 @@
 public class Lesson20 {
     public static void main(String[] args) {
-        Human human1 = new Human("Bob", 22);
+        Human human1 = new Human();
     }
 }
 
@@ -18,6 +18,7 @@ class Human {
     public Human() {
         this.name = "John Doe";
         this.age = 99;
+        System.out.println("This is first constructor.");
         System.out.println("My name is " + name + ". I'm " + age + " years old.");
     }
     public Human(String name) {
